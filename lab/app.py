@@ -10,4 +10,10 @@ def home():
 def display_student(student_id):
     return render_template('student.html', student_id=student_id)
 
+
+def hello_name_route(name):
+    return render_template(
+        'hello.html', n = name)
+
+
 app.run(debug=True)
